@@ -1,0 +1,293 @@
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    line-height: 1.5;
+    width: 100vw;
+  }
+  .section {
+    padding: 5rem 3rem;
+  }
+  .section__title {
+    max-width: 80rem;
+    margin: 0 auto 4rem auto;
+  }
+
+  .section__description {
+    font-size: 1.2rem;
+  }
+
+  .section__header {
+    font-size: 2.5rem;
+    line-height: 1;
+  }
+
+  .btn {
+    font-size: 1.2rem;
+    padding: 1.25rem 2.5rem;
+    border-radius: 5rem;
+  }
+
+  .btn--text {
+    font-size: 1.2rem;
+  }
+
+  button:focus {
+    outline: none;
+  }
+  .header {
+    height: 60vh;
+  }
+
+  .header__title {
+    margin-top: 5rem;
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 4rem;
+    text-align: center;
+    justify-items: center;
+  }
+
+  .header__img {
+    width: 50%;
+    grid-column: 1;
+    grid-row: 3 / span 1;
+    border-radius: 10px;
+  }
+
+  .header__btn {
+    width: 50%;
+    grid-row: 4;
+  }
+
+  /* FEATURES */
+  .features {
+    grid-template-columns: 1fr;
+    gap: 4rem;
+    margin: 0;
+    justify-items: center;
+  }
+
+  .features__img {
+    width: 80%;
+  }
+
+  .features__feature {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .features__icon {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  /* OPERATIONS */
+  .operations {
+    max-width: 100rem;
+    margin: 2rem auto 0 auto;
+    background-color: #f3f3f3;
+  }
+
+  .operations__tab-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  .operations__tab {
+    width: 70%;
+    margin: 1rem 0rem;
+    transform: translateY(0%);
+  }
+
+  .operations__tab--3:hover {
+    background-color: var(--color-tertiary-darker);
+  }
+
+  .operations__tab--active {
+    transform: translateY(0%);
+  }
+
+  .operations__content {
+    display: none;
+    font-size: 1.7rem;
+    padding: 2.5rem 7rem 6.5rem 7rem;
+    background-color: #fff;
+  }
+
+  .operations__content--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .operations__icon {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  /* SLIDER */
+  .slider {
+    max-width: 100rem;
+    height: 50rem;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 1s;
+  }
+
+  .dots {
+    display: none;
+  }
+
+  /* TESTIMONIALS */
+
+  .testimonial__text {
+    font-size: 1.3rem;
+    margin-bottom: 3rem;
+  }
+
+  .testimonial__author {
+    margin-left: 0;
+  }
+
+  .testimonial__location {
+    font-size: 1.5rem;
+  }
+
+  .section__title--testimonials {
+    margin-bottom: 2rem;
+  }
+
+  /* SIGNUP */
+  .section--sign-up {
+    padding: 5rem 3rem;
+  }
+
+  .section--sign-up .section__title {
+    margin-bottom: 3rem;
+  }
+
+  /* FOOTER */
+  .footer {
+    padding: 5rem 3rem;
+  }
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  .footer__item {
+    margin: 0 0 1rem 0;
+  }
+
+  /* MODAL WINDOW */
+  .modal {
+    width: 100%;
+  }
+
+  .modal__header {
+    font-size: 2.5rem;
+  }
+
+  .modal__form {
+    margin: 0 0rem;
+  }
+
+  .modal__form label {
+    font-size: 1.5rem;
+  }
+
+  .modal__form input {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+
+  .modal__form button {
+    grid-column: 1 / span 2;
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 7.5rem;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .nav__logo {
+    height: 4rem;
+  }
+
+  .nav__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+  }
+  .nav.sticky .nav__links {
+    display: none;
+  }
+  .nav__item {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    padding: 0.8rem 1.5rem;
+    color: #faedf0;
+  }
+
+  /* HEADER */
+  .header {
+    height: 70vh;
+  }
+
+  .header__title {
+    margin-top: 10rem;
+  }
+
+  .header__title h1 {
+    display: block;
+    width: 100%;
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+
+  .header__title h4 {
+    display: block;
+    width: 95%;
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+}
