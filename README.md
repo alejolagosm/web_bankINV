@@ -1,6 +1,6 @@
 # Landing page for a bank
 
-This is a webpage for a tour agency. Uses only HTML, CSS and Vanilla JS.
+This is a webpage for a digital investment bank. Uses only HTML, CSS and Vanilla JS.
 You can download the files and set up a local server, it should work just fine.
 
 There are some cool properties and effects:
